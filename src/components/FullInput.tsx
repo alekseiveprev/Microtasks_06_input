@@ -1,4 +1,5 @@
 import react, { ChangeEvent, useState } from 'react';
+
 type FullInputPropsType = {
   addMessage: (title: string) => void;
 };
@@ -14,7 +15,7 @@ export const FullInput = (props: FullInputPropsType) => {
 
   const onClickButtonHandler = () => {
     props.addMessage(title);
-    setTitle("")
+    setTitle('');
   };
 
   return (
